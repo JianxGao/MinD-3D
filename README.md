@@ -1,7 +1,12 @@
 # MinD-3D: Reconstruct High-quality 3D objects in Human Brain
 
 
-We will release code, model and dataset.
+We will release code, model.
+
+# Dataset
+You can download fMRI-Shape by this link: https://huggingface.co/datasets/Fudan-fMRI/fMRI-Shape.
+
+(Now we have released the data for **Subject 1**)
 
 # Introduction
 <img src='./imgs/teaser.png' width="100%">
