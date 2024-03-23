@@ -1,12 +1,16 @@
 # MinD-3D: Reconstruct High-quality 3D objects in Human Brain
 
 
+[![ArXiv](https://img.shields.io/badge/ArXiv-2312.07485-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2312.07485)
+[![HomePage](https://img.shields.io/badge/HomePage-Visit-blue.svg?logo=homeadvisor&logoColor=f5f5f5)](https://jianxgao.github.io/MinD-3D/)
+[![Dataset](https://img.shields.io/badge/Dataset-fMRI_Shape-F07B3F.svg)](https://huggingface.co/datasets/Fudan-fMRI/fMRI-Shape)
+
 We will release code and model.
 
 # Dataset
 You can download fMRI-Shape by this link: https://huggingface.co/datasets/Fudan-fMRI/fMRI-Shape.
 
-(Now we have released the data for **Subject 1**)
+(We have released the data for **Subject 1,2,3,9,11** with the annotations.)
 
 # Introduction
 <img src='./imgs/teaser.png' width="100%">
