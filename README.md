@@ -10,9 +10,9 @@ We will release code and model.
 # Dataset
 The dataset hasn't been approved previously, and it's currently going through the approval process. We will release it as soon as possible.
 
-~~You can download fMRI-Shape by this link: https://huggingface.co/datasets/Fudan-fMRI/fMRI-Shape.~~
+You can download fMRI-Shape by this link: https://huggingface.co/datasets/Fudan-fMRI/fMRI-Shape.
 
-~~(We have released the data for **Subject 1,2,3,9,11** with the annotations.)~~
+(We have released the data and stimuli for **Subject 1,2,3,9,11** with the annotations.)
 
 # Introduction
 <img src='./imgs/teaser.png' width="100%">
