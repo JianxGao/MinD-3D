@@ -1,4 +1,4 @@
-## [ECCV 2024] MinD-3D: Reconstruct High-quality 3D objects in Human Brain
+# [ECCV 2024] MinD-3D: Reconstruct High-quality 3D objects in Human Brain
 
 [Jianxiong Gao](https://jianxgao.github.io/), [Yuqian Fu](http://yuqianfu.com/), Yun Wang, [Xuelin Qian](https://naiq.github.io/), [Jianfeng Feng](https://www.dcs.warwick.ac.uk/~feng/) and [Yanwei Fu†](http://yanweifu.github.io/)
 
