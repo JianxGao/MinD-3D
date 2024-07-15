@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="MinD-3D: Reconstruct High-quality 3D objects in Human Brain">
+  <meta name="keywords" content="fMRI, 3D Reconstruction">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MinD-3D</title>
+
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+<!--  <link rel="icon" href="./static/images/favicon.svg">-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://jianxgao.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">MinD-3D: Reconstruct High-quality 3D objects in Human Brain</h1>
+          <h2><font color="gray" size="5">ECCV 2024</font></h2>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://jianxgao.github.io/">Jianxiong Gao</a>,
+            </span>
+            <span class="author-block">
+              <a href="http://yuqianfu.com/">Yuqian Fu</a>,
+            </span>
+            <span class="author-block">
+              <div>Yun Wang, </div>
+              <!-- <a href="https://yikai-wang.github.io/"></a>, -->
+            </span>
+            <span class="author-block">
+              <a href="https://naiq.github.io/">Xuelin Qian</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.dcs.warwick.ac.uk/~feng/">Jianfeng Feng</a>,
+            </span>
+            <span class="author-block">
+              <a href="http://yanweifu.github.io/">Yanwei Fu</a><sup>*</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Fudan University
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+<!--              <span class="link-block">-->
+<!--                <a href="https://arxiv.org/abs/1908.01491"-->
+<!--                   class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                      <i class="fas fa-file-pdf"></i>-->
+<!--                  </span>-->
+<!--                  <span>Paper</span>-->
+<!--                </a>-->
+<!--              </span>-->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2312.07485"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+             <!-- <span class="link-block">-->
+               <!-- <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"-->
+<!--                   class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                      <i class="fab fa-youtube"></i>-->
+<!--                  </span>-->
+<!--                  <span>Video</span>-->
+<!--                </a>-->
+<!--              </span> -->
+              <span class="link-block">
+                <a href="https://huggingface.co/datasets/Fudan-fMRI/fMRI-Shape"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-database"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/JianxGao/MinD-3D"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming soon)</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <center>
+        <img src="./imgs/teaser.png" width="100%"/>
+      </center>
+      <p>
+        We introduce a novel task termed as <b>Recon3DMind</b>. Left: we showcase our data acquisition and modeling principles. 
+        Right: our proposed <b>MinD-3D</b> decodes fMRI signals to recover semantically matched, structurally coherent 3D objects with remarkable fidelity.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            In this paper, we introduce <b>Recon3DMind</b>, an innovative task aimed at reconstructing 3D visuals from Functional Magnetic Resonance Imaging (fMRI) signals, marking a significant advancement in the fields of cognitive neuroscience and computer vision. 
+            To support this pioneering task, we present the <b>fMRI-Shape</b> dataset, which includes data from 14 participants and features 360-degree videos of 3D objects to enable comprehensive fMRI signal capture across various settings, 
+            thereby laying a foundation for future research. Furthermore, we propose <b>MinD-3D</b>, a novel and effective three-stage framework specifically designed to decode the brain's 3D visual information from fMRI signals, 
+            demonstrating the feasibility of this challenging task. The framework begins by extracting and aggregating features from fMRI frames through a neuro-fusion encoder, subsequently employs a feature bridge diffusion model to generate visual features, 
+            and ultimately recovers the 3D object via a generative transformer decoder. 
+            We assess the performance of MinD-3D using a suite of semantic and structural metrics and analyze the correlation between the features extracted by our model and the visual regions of interest (ROIs) in fMRI signals. 
+            Our findings indicate that MinD-3D not only reconstructs 3D objects with high semantic relevance and spatial similarity but also significantly enhances our understanding of the human brain's capabilities in processing 3D visual information. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">fMRI-Shape</h2>
+        <div class="content has-text-justified">
+          <center>
+            <img src="./imgs/fmri_shape.png" width="100%"/>
+          </center>
+          <p>
+            Here are some examples of the fMRI-Shape dataset across different subjects. You can download the dataset by this link: https://huggingface.co/datasets/Fudan-fMRI/fMRI-Shape.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Reconstruction</h2>
+        <div class="content has-text-justified">
+          <center>
+            <img src="./imgs/visualization.png" width="100%"/>
+          </center>
+          <p>
+            The qualitative results generated by LEA-3D, fMRI-PTE-3D, and our method
+            are presented. GT indicates the ground-truth 3D objects. All the objects have been
+            rendered into a 2D format
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Framework</h2>
+        <div class="content has-text-justified">
+          <center>
+            <img src="./imgs/MinD-3D.png" width="100%"/>
+          </center>
+          <p>
+            <b>Overview of the MinD-3D Framework.</b>
+            Our approach combines a Neuro-Fusion Encoder for extracting features from fMRI frames, a Feature Bridge Diffusion Model for generating visual features from these fMRI signals, and a Latent Adapted Decoder based on the Argus 3D shape generator for reconstructing 3D objects. This integrated system effectively aligns and translates brain signals into accurate 3D visual representations. Note that the CLIP encoder is only for training the model, while it is not used for the inference stage.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+@misc{gao2023mind3d,
+  title={MinD-3D: Reconstruct High-quality 3D objects in Human Brain}, 
+  author={Jianxiong Gao and Yuqian Fu and Yun Wang and Xuelin Qian and Jianfeng Feng and Yanwei Fu},
+  year={2023},
+  eprint={2312.07485},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV}
+}
+    </code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/abs/2312.07485">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/JianxGao/MinD-3D" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

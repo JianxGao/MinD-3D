@@ -1,0 +1,28 @@
+diffusion_prior:
+  dim: 512
+  depth: 6
+  num_timesteps: 100
+  max_fmri_len: 256
+  num_time_embeds: 1
+  num_image_embeds: 1
+  num_fmri_embeds: 1
+  dim_head: 64
+  heads: 8
+  ff_mult: 4
+  norm_out: true
+  attn_dropout: 0.01
+  ff_dropout: 0.01
+  final_proj: true
+  normformer: true
+  rotary_emb: true
+
+image_embed_dim: 512
+image_size: 224
+image_channels: 3
+timesteps: 100
+sample_timesteps: 64
+cond_drop_prob: 0.2
+loss_type: l2
+predict_x_start: true
+beta_schedule: cosine
+condition_on_text_encodings: true

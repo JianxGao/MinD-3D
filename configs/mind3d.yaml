@@ -1,0 +1,117 @@
+seed: 42
+
+diff_prior_config_path: ./configs/diffusion.yaml
+
+data:
+  input_type: pointcloud
+  classes: null
+  pointcloud_n: 30000
+  pointcloud_noise: 0.005
+  points_subsample: 2048
+  points_file: points.npz
+  points_iou_file: points.npz
+  voxels_file: null
+
+
+fmri_model:
+  data:
+    flip: False
+    center_crop: False
+    image_size: [256, 256] # [h, w]
+    patch_size: 16
+    norm: False # norm to [-1, 1] otherwise [0, 1]
+    val_ratio: 0.01
+
+  # Transformer Settings
+  model:
+    in_chans: 1
+    encoder_depth: 24 # 24
+    embed_dim: 1024 # 1024
+    decoder_depth: 24 # 8
+    decoder_embed_dim: 1024
+    num_heads: 16
+    drop_rate: 0.01
+    norm_before: True
+
+
+3d_model:
+  clip:
+    model_name: ViT-B/32
+    clip_embed_dim: 512
+
+  encoder: pointnet_local_pool
+  encoder_kwargs:
+    hidden_dim: 32
+    plane_type: ['xz', 'xy', 'yz']
+    plane_resolution: 256
+    unet: True
+    unet_kwargs:
+      depth: 4
+      merge_mode: concat
+      start_filts: 32
+  decoder: simple_local
+  decoder_kwargs:
+    sample_mode: bilinear # bilinear / nearest
+    hidden_size: 32
+  c_dim: 32
+
+  quantizer: quantize_3plane
+  quantizer_kwargs:
+    embedding_num: 8192
+    embedding_dim: 512
+    beta: 0.4
+    reduce_dim: 4
+
+  stage2_model: fast_transformer
+  stage2_model_kwargs:
+    sequence_length: 1027
+    stage2_embed_dim: 3072
+    transformer_embed_dim: 3072
+    transformer_n_head: 16
+    init_with_vqvae: False
+    embed_drop_p: 0.01
+    mlp_drop: 0.01
+    attn_drop: 0.01
+    resid_drop: 0.01
+    position_num: 1026
+    transformer_layer: 32
+
+  fast_transformer_kwargs:
+    attention_type: causal-linear
+#    n_layers: 32
+#    n_heads: 32
+#    feed_forward_dimensions: 256
+#    query_dimensions: 64
+#    value_dimensions: 64
+
+training:
+  noisy: True
+  optim: adamw
+  batch_size: 8
+  model_selection_metric: iou
+  model_selection_mode: maximize
+  
+  # log every
+  print_every: 32
+  backup_every: 1000
+  validate_every: 160
+  visualize_every: 480
+
+  lr: 1e-5
+  warmup_iters: 150
+  max_iters: 3000
+
+  n_workers: 8
+  n_workers_val: 4
+
+test:
+  threshold: 0.2
+  eval_mesh: true
+  eval_pointcloud: false
+  model_file: model_best.pt
+
+generation:
+  vis_n_outputs: 2
+  refine: false
+  n_x: 128
+  n_z: 1

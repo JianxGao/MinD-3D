@@ -1,0 +1,16 @@
+chardet 
+open3d 
+scikit-image 
+tensorboard 
+trimesh 
+ftfy 
+timm 
+opencv-python 
+omegaconf 
+regex 
+pytorch_lightning==1.9 
+einops 
+timm==0.6.12
+kornia
+resize_right
+beartype
