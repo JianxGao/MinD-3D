@@ -4,7 +4,7 @@
 
 [![ArXiv](https://img.shields.io/badge/ArXiv-2312.07485-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2312.07485)
 [![HomePage](https://img.shields.io/badge/HomePage-Visit-blue.svg?logo=homeadvisor&logoColor=f5f5f5)](https://jianxgao.github.io/MinD-3D/)
-[![Dataset](https://img.shields.io/badge/Dataset-fMRI_Shape-F07B3F.svg)](https://huggingface.co/datasets/Fudan-fMRI/fMRI-Shape)
+[![Dataset](https://img.shields.io/badge/Dataset-fMRI_Shape-faa035.svg?logo=Huggingface)](https://huggingface.co/datasets/Fudan-fMRI/fMRI-Shape)
 
 
 
