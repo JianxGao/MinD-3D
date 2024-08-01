@@ -13,8 +13,12 @@
 <img src='./imgs/teaser.png' width="100%">
 
 
-# Dataset
+# Dataset and checkpoints
 You can download fMRI-Shape by this link: https://huggingface.co/datasets/Fudan-fMRI/fMRI-Shape.
+
+You can download the weight of subject 1 through the link: 
+
+https://drive.google.com/file/d/1ni4g1iCvdpoi2xYtmydr_w3XA5PpNrvm/view?usp=sharing
 
 # Environment Setup
 
@@ -23,10 +27,6 @@ git clone https://github.com/JianxGao/MinD-3D.git
 cd MinD-3D
 bash env_install.sh
 ```
-# Checkpoint
-You can download the weight of subject 1 through the link: 
-
-https://drive.google.com/file/d/1ni4g1iCvdpoi2xYtmydr_w3XA5PpNrvm/view?usp=sharing
 
 # Inference
 
