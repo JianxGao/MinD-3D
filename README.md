@@ -5,6 +5,7 @@
 [![ArXiv](https://img.shields.io/badge/ArXiv-2312.07485-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2312.07485)
 [![HomePage](https://img.shields.io/badge/HomePage-Visit-blue.svg?logo=homeadvisor&logoColor=f5f5f5)](https://jianxgao.github.io/MinD-3D/)
 [![Dataset](https://img.shields.io/badge/Dataset-fMRI_Shape-faa035.svg?logo=Huggingface)](https://huggingface.co/datasets/Fudan-fMRI/fMRI-Shape)
+[![Dataset](https://img.shields.io/badge/Dataset-fMRI_Objaverse-3aa0a5.svg?logo=Huggingface)](https://huggingface.co/datasets/Fudan-fMRI/fMRI-Objaverse)
 
 
 
@@ -15,6 +16,8 @@
 
 # Dataset and checkpoints
 You can download fMRI-Shape by this link: https://huggingface.co/datasets/Fudan-fMRI/fMRI-Shape.
+
+You can download fMRI-Objaverse by this link: https://huggingface.co/datasets/Fudan-fMRI/fMRI-Objaverse.
 
 You can download the weight of subject 1 through the link: 
 
@@ -51,5 +54,17 @@ If you find our paper useful for your research and applications, please cite usi
       eprint={2312.07485},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
+}
+```
+
+```
+@misc{gao2024fmri3dcomprehensivedatasetenhancing,
+      title={fMRI-3D: A Comprehensive Dataset for Enhancing fMRI-based 3D Reconstruction}, 
+      author={Jianxiong Gao and Yuqian Fu and Yun Wang and Xuelin Qian and Jianfeng Feng and Yanwei Fu},
+      year={2024},
+      eprint={2409.11315},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2409.11315}, 
 }
 ```
