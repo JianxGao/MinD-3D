@@ -13,8 +13,8 @@
 
 # Project Updates
 - 🔥 **News**: We have released the training code!
-- 🔥 **Note**: fMRI-Objaverse: https://huggingface.co/datasets/Fudan-fMRI/fMRI-Objaverse
-- 🔥 **Note**: fMRI-Shape: https://huggingface.co/datasets/Fudan-fMRI/fMRI-Shape
+-  **News**: We sample a new dataset, fMRI-Objaverse: https://huggingface.co/datasets/Fudan-fMRI/fMRI-Objaverse.
+-  **Note**: fMRI-Shape: https://huggingface.co/datasets/Fudan-fMRI/fMRI-Shape.
 
 # Environment Setup
 
