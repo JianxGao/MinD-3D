@@ -101,9 +101,6 @@ training:
   warmup_iters: 150
   max_iters: 3000
 
-  n_workers: 8
-  n_workers_val: 4
-
 test:
   threshold: 0.2
   eval_mesh: true

@@ -8,11 +8,21 @@
 [![Dataset](https://img.shields.io/badge/Dataset-fMRI_Objaverse-3aa0a5.svg?logo=Huggingface)](https://huggingface.co/datasets/Fudan-fMRI/fMRI-Objaverse)
 
 
-
-
 # Introduction
 <img src='./imgs/teaser.png' width="100%">
 
+# Project Updates
+- 🔥 **News**: We have released the training code!
+- 🔥 **Note**: fMRI-Objaverse: https://huggingface.co/datasets/Fudan-fMRI/fMRI-Objaverse
+- 🔥 **Note**: fMRI-Shape: https://huggingface.co/datasets/Fudan-fMRI/fMRI-Shape
+
+# Environment Setup
+
+```bash
+git clone https://github.com/JianxGao/MinD-3D.git
+cd MinD-3D
+bash env_install.sh
+```
 
 # Dataset and checkpoints
 You can download fMRI-Shape by this link: https://huggingface.co/datasets/Fudan-fMRI/fMRI-Shape.
@@ -23,13 +33,27 @@ You can download the weight of subject 1 through the link:
 
 https://drive.google.com/file/d/1ni4g1iCvdpoi2xYtmydr_w3XA5PpNrvm/view?usp=sharing
 
-# Environment Setup
+
+
+# Train
 
 ```bash
-git clone https://github.com/JianxGao/MinD-3D.git
-cd MinD-3D
-bash env_install.sh
+CUDA_VISIBLE_DEVICES=0 python -m torch.distributed.launch --nproc_per_node=1 --master_port=25645 \
+ train_stage1.py --sub_id 0001 --ddp \
+ --config ./configs/mind3d.yaml \
+ --out_dir sub01_stage1 --batchsize 8
 ```
+
+```bash
+CUDA_VISIBLE_DEVICES=1 python -m torch.distributed.launch --nproc_per_node=1 --master_port=25645 \
+ train_stage2.py --sub_id 0001 --ddp \
+ --config ./configs/mind3d.yaml \
+ --out_dir sub01_stage2 --batchsize 2
+```
+
+You can access the quantized features for training through the link: https://drive.google.com/file/d/1R8IpG1bligLAfHkLQ2COrfTIkay14AEm/view?usp=drive_link.
+
+
 
 # Inference
 
