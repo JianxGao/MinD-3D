@@ -82,10 +82,10 @@ If you find our paper useful for your research and applications, please cite usi
 ```
 
 ```
-@misc{gao2024fmri3dcomprehensivedatasetenhancing,
-      title={fMRI-3D: A Comprehensive Dataset for Enhancing fMRI-based 3D Reconstruction}, 
-      author={Jianxiong Gao and Yuqian Fu and Yun Wang and Xuelin Qian and Jianfeng Feng and Yanwei Fu},
-      year={2024},
+@misc{gao2025mind3dadvancingfmribased3d,
+      title={MinD-3D++: Advancing fMRI-Based 3D Reconstruction with High-Quality Textured Mesh Generation and a Comprehensive Dataset}, 
+      author={Jianxiong Gao and Yanwei Fu and Yuqian Fu and Yun Wang and Xuelin Qian and Jianfeng Feng},
+      year={2025},
       eprint={2409.11315},
       archivePrefix={arXiv},
       primaryClass={cs.CV},
