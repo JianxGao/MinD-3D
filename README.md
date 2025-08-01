@@ -88,9 +88,6 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node
  --out_dir mind3dpp_fmri_shape_subject1_rank_64 --batchsize 8
 ```
 
-You can access the quantized features for training through the link: https://drive.google.com/file/d/1R8IpG1bligLAfHkLQ2COrfTIkay14AEm/view?usp=drive_link.
-
-
 
 ## Inference
 
