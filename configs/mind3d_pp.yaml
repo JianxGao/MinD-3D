@@ -1,0 +1,26 @@
+learning_rate: 1e-4
+
+model:
+  base_learning_rate: 1.0e-05
+  target: zero123plus.model.MVDiffusion
+  params:
+    drop_cond_prob: 0.1
+
+    stable_diffusion_config:
+      pretrained_model_name_or_path: ~/.cache/huggingface/hub/models--sudo-ai--zero123plus-v1.2/snapshots/2da07e89919e1a130c9b5add1584c70c7aa065fd
+      custom_pipeline: src/zero123plus
+
+    fmri_encoder_config:
+      patch_size: 16
+      image_size: [256, 256]
+      embed_dim: 1024
+      num_heads: 16
+      drop_rate: 0.01
+      in_chans: 1
+      encoder_depth: 24
+
+training:
+  print_every: 10
+  backup_every: 10000
+  validate_every: 15000
+  visualize_every: 2000
