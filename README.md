@@ -24,10 +24,6 @@ You can download fMRI-Shape by this link: https://huggingface.co/datasets/Fudan-
 
 You can download fMRI-Objaverse by this link: https://huggingface.co/datasets/Fudan-fMRI/fMRI-Objaverse.
 
-You can download the weight of subject 1 through the link: 
-
-https://drive.google.com/file/d/1ni4g1iCvdpoi2xYtmydr_w3XA5PpNrvm/view?usp=sharing
-
 
 # MinD-3D
 
@@ -57,6 +53,10 @@ CUDA_VISIBLE_DEVICES=1 python -m torch.distributed.launch --nproc_per_node=1 --m
 ```
 
 You can access the quantized features for training through the link: https://drive.google.com/file/d/1R8IpG1bligLAfHkLQ2COrfTIkay14AEm/view?usp=drive_link.
+
+
+You can download the weight of subject 1 through the link: 
+https://drive.google.com/file/d/1ni4g1iCvdpoi2xYtmydr_w3XA5PpNrvm/view?usp=sharing
 
 
 
