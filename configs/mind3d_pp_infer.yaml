@@ -1,0 +1,34 @@
+model_config:
+  target: src.models.lrm_mesh.InstantMesh
+  params:
+    encoder_feat_dim: 768
+    encoder_freeze: false
+    encoder_model_name: facebook/dino-vitb16
+    transformer_dim: 1024
+    transformer_layers: 16
+    transformer_heads: 16
+    triplane_low_res: 32
+    triplane_high_res: 64
+    triplane_dim: 80
+    rendering_samples_per_ray: 128
+    grid_res: 128
+    grid_scale: 2.1
+
+
+infer_config:
+  # unet_path: /ssd/gaojianxiong/diffusion_pytorch_model.bin
+  model_path: ./instant_mesh_large.ckpt
+  texture_resolution: 1024
+  render_resolution: 512
+
+
+model:
+  params:
+    fmri_encoder_config:
+      patch_size: 16
+      image_size: [256, 256]
+      embed_dim: 1024
+      num_heads: 16
+      drop_rate: 0.01
+      in_chans: 1
+      encoder_depth: 24
