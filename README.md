@@ -5,6 +5,12 @@
 
 <img src='./imgs/MinD-3D++.jpg' width="100%">
 
+[![ArXiv](https://img.shields.io/badge/MinD--3D-2312.07485-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2312.07485)
+[![ArXiv](https://img.shields.io/badge/MinD--3D++-2409.11315-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2409.11315)
+[![HomePage](https://img.shields.io/badge/HomePage-Visit-blue.svg?logo=homeadvisor&logoColor=f5f5f5)](https://jianxgao.github.io/MinD-3D/)
+[![Dataset](https://img.shields.io/badge/Dataset-fMRI_Shape-faa035.svg?logo=Huggingface)](https://huggingface.co/datasets/Fudan-fMRI/fMRI-Shape)
+[![Dataset](https://img.shields.io/badge/Dataset-fMRI_Objaverse-3aa0a5.svg?logo=Huggingface)](https://huggingface.co/datasets/Fudan-fMRI/fMRI-Objaverse)
+
 
 
 > [ECCV 2024] MinD-3D: Reconstruct High-quality 3D objects in Human Brain<br>
@@ -14,12 +20,6 @@
 > MinD-3D++: Advancing fMRI-Based 3D Reconstruction with High-Quality Textured Mesh Generation and a Comprehensive Dataset<br>
 > [Jianxiong Gao](https://jianxgao.github.io/), [Yanwei Fu†](http://yanweifu.github.io/), [Yuqian Fu](http://yuqianfu.com/), Yun Wang, [Xuelin Qian](https://naiq.github.io/), [Jianfeng Feng](https://www.dcs.warwick.ac.uk/~feng/)<br>
 > **TPAMI**, 2025
-
-[![ArXiv](https://img.shields.io/badge/MinD--3D-2312.07485-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2312.07485)
-[![ArXiv](https://img.shields.io/badge/MinD--3D++-2409.11315-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2409.11315)
-[![HomePage](https://img.shields.io/badge/HomePage-Visit-blue.svg?logo=homeadvisor&logoColor=f5f5f5)](https://jianxgao.github.io/MinD-3D/)
-[![Dataset](https://img.shields.io/badge/Dataset-fMRI_Shape-faa035.svg?logo=Huggingface)](https://huggingface.co/datasets/Fudan-fMRI/fMRI-Shape)
-[![Dataset](https://img.shields.io/badge/Dataset-fMRI_Objaverse-3aa0a5.svg?logo=Huggingface)](https://huggingface.co/datasets/Fudan-fMRI/fMRI-Objaverse)
 
 
 # 🔥 Updates
