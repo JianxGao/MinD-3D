@@ -9,7 +9,7 @@
 [![Dataset](https://img.shields.io/badge/Dataset-fMRI_Objaverse-3aa0a5.svg?logo=Huggingface)](https://huggingface.co/datasets/Fudan-fMRI/fMRI-Objaverse)
 
 
-<img src='./imgs/MinD-3D++.jpg' width="100%">
+<img src='./imgs/teaser++.jpg' width="100%">
 
 
 
@@ -38,6 +38,9 @@ You can download fMRI-Objaverse by this link: https://huggingface.co/datasets/Fu
 
 
 # MinD-3D
+
+<img src='./imgs/MinD-3D.jpg' width="100%">
+
 
 ## Environment Setup
 
@@ -86,9 +89,12 @@ python generate_fmri2shape.py --config ./configs/mind3d.yaml  --check_point_path
 
 # MinD-3D++
 
+<img src='./imgs/MinD-3D++.jpg' width="100%">
+
+
 ## Environment Setup
 
-For detailed instructions, please refer to the [InstantMesh](https://github.com/TencentARC/InstantMesh)
+For detailed instructions, please refer to the [InstantMesh](https://github.com/TencentARC/InstantMesh).
 
 
 ## Train
