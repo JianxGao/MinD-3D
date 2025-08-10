@@ -1,5 +1,5 @@
 # MinD-3D & MinD-3D++
-### fMRI-Based 3D Reconstruction — From High-Quality Objects to Textured Meshes and Comprehensive Datasets
+### From High-Quality Objects to Textured Meshes fMRI-Based 3D Reconstruction
 
 
 
