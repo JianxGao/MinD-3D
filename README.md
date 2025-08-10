@@ -1,6 +1,14 @@
-# [ECCV 2024] MinD-3D: Reconstruct High-quality 3D objects in Human Brain
+# MinD-3D & MinD-3D++
+### fMRI-Based 3D Reconstruction — From High-Quality Objects to Textured Meshes and Comprehensive Datasets
 
-[Jianxiong Gao](https://jianxgao.github.io/), [Yuqian Fu](http://yuqianfu.com/), Yun Wang, [Xuelin Qian](https://naiq.github.io/), [Jianfeng Feng](https://www.dcs.warwick.ac.uk/~feng/) and [Yanwei Fu†](http://yanweifu.github.io/)
+
+> [ECCV 2024] MinD-3D: Reconstruct High-quality 3D objects in Human Brain
+ [Jianxiong Gao](https://jianxgao.github.io/), [Yuqian Fu](http://yuqianfu.com/), Yun Wang, [Xuelin Qian](https://naiq.github.io/), [Jianfeng Feng](https://www.dcs.warwick.ac.uk/~feng/), [Yanwei Fu†](http://yanweifu.github.io/)
+ ECCV, 2024
+
+> MinD-3D++: Advancing fMRI-Based 3D Reconstruction with High-Quality Textured Mesh Generation and a Comprehensive Dataset
+ [Jianxiong Gao](https://jianxgao.github.io/), [Yanwei Fu†](http://yanweifu.github.io/), [Yuqian Fu](http://yuqianfu.com/), Yun Wang, [Xuelin Qian](https://naiq.github.io/), [Jianfeng Feng](https://www.dcs.warwick.ac.uk/~feng/)
+TPAMI, 2025
 
 [![ArXiv](https://img.shields.io/badge/MinD--3D-2312.07485-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2312.07485)
 [![ArXiv](https://img.shields.io/badge/MinD--3D++-2409.11315-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2409.11315)
@@ -12,13 +20,12 @@
 # Introduction
 <img src='./imgs/teaser.png' width="100%">
 
-# Project Updates
-- 🔥 **News**: We have released the code for MinD-3D++!
--  **News**: We have released the training code for MinD-3D!
--  **News**: We sample a new dataset, fMRI-Objaverse: https://huggingface.co/datasets/Fudan-fMRI/fMRI-Objaverse.
--  **Note**: fMRI-Shape: https://huggingface.co/datasets/Fudan-fMRI/fMRI-Shape.
+# 🔥 Updates
+- [08/2025] MinD-3D++ is accepted by **TPAMI**!
+- [08/2025] We have released the code for MinD-3D++!
+- [11/2024] We have released the training code for MinD-3D!
 
-# Dataset and checkpoints
+# Dataset 
 
 You can download fMRI-Shape by this link: https://huggingface.co/datasets/Fudan-fMRI/fMRI-Shape.
 
