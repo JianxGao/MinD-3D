@@ -122,6 +122,40 @@ CUDA_VISIBLE_DEVICES=0 python infer_fmri_obj.py ./configs/mind3d_pp_infer.yaml \
 ```
 
 
+
+
+## Data Preprocessing Instructions
+
+If you would like to preprocess our data from scratch, please follow the steps below.
+
+### Step 1: fMRI Preprocessing with fMRIPrep
+
+First, run the following command to preprocess the raw fMRI data using **fMRIPrep**. This step will generate **dtseries** data as output. (It may cost one day)
+
+```bash
+~/.local/bin/fmriprep-docker path/to/fMRI_Shape/dcm2bids/BIDS path/to/fMRI_Shape/dcm2bids/BIDS2 participant --skip_bids_validation \
+ --participant-label 0003 -w path/to/fMRI_Shape/dcm2bids/fmriprep_BIDS2/tmp --nthreads 32 --omp-nthreads 32 \
+ --output-spaces MNI152NLin6Asym:res-2 fsaverage5 --cifti-output --use-aroma --ignore slicetiming sbref t2w \
+ --fs-subjects-dir path/to/fMRI_Shape/dcm2bids/Test/freesurfer  --fs-license-file path/to/gaojianxiong/license.txt
+```
+
+After this step, the preprocessed **CIFTI dtseries** files will be generated.
+
+### Step 2: Convert dtseries to Surface fMRI Images
+
+If you want to obtain surface-based fMRI images in the same format as shown in our paper, you should first install **Connectome Workbench**:
+
+[https://www.humanconnectome.org/software/get-connectome-workbench#download](https://www.humanconnectome.org/software/get-connectome-workbench#download)
+
+After setting up Connectome Workbench, please run the following script:
+
+```bash
+python nii2surf_dnv.py
+```
+
+This script converts the preprocessed **dtseries** data into surface-based fMRI visualizations that are consistent with those used in the paper.
+
+
 # Citation
 If you find our paper useful for your research and applications, please cite using this BibTeX:
 
