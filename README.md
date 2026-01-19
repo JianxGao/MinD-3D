@@ -126,7 +126,7 @@ CUDA_VISIBLE_DEVICES=0 python infer_fmri_obj.py ./configs/mind3d_pp_infer.yaml \
 
 ## Data Preprocessing Instructions
 
-If you would like to preprocess our data from scratch, please follow the steps below.
+If you would like to preprocess our data from scratch, please refer to the [data_process](https://github.com/JianxGao/MinD-3D/tree/main/data_process) folder and follow the steps below.
 
 ### Step 1: fMRI Preprocessing with fMRIPrep
 
@@ -154,6 +154,17 @@ python nii2surf_dnv.py
 ```
 
 This script converts the preprocessed **dtseries** data into surface-based fMRI visualizations that are consistent with those used in the paper.
+
+### Step 3: Convert H5 Files to NPY Format
+
+After generating the surface-based fMRI data, run the following script to convert `.h5` files into `.npy` format:
+
+```bash
+python h5tonpy.py
+```
+
+**Please make sure to modify the file paths in the script according to your local directory structure.**
+
 
 
 # Citation
